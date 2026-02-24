@@ -8,7 +8,7 @@ export PATH
 cat <<- EOF >> "${HOME}/config/opensearch_dashboards.yml"
 server:
   host: 0.0.0.0
-  port: ${PORT}
+  port: ${OPENSEARCH_DASHBOARD_PORT}
 
 opensearch.hosts:
   - "${OPENSEARCH_URL}"
